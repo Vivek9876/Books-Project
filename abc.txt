@@ -1,0 +1,39 @@
+I wants to develop one application in python I will give you the details
+
+
+This is the only api project.
+
+Where I have to create two tables in postgresql that is books and reviews
+For books fields:-
+id, title, author, genre, year_published, summary
+For reviews fields:- 
+id, book_id(foreign key referencing books), user_id, review_text, rating
+
+now I have to create 2 models
+
+details of models:-
+
+1)Llama3 model integeration:- llama3 generative Ai model to generate summaries for books based on their content. Integrate the llama3 model to generate summaries for new book entries and review summaries for each book
+
+2) Machine Learning MOdel:- Develop a machine learning model to recommend books based on the genre and average rating field.Train the model on sample datset of books (you can use any open dataset or generate synthetic data)
+
+Now I want to make new resfull api server using faskapi  with intgration of postgresql as mentioned above and endpoints are below:-
+
+- POST /books: add a new book
+- GET /books: retrive all books
+- GET /books/<id>: retrive specific book by id
+- PUT /books/<id>: update the information about the book by id
+- DELETE /book/<id>: delete book by id 
+- POST /books/<id>/reviews: add a review for book
+- GET /books/<id>/reviews: retrive all reviews for a book
+- GET /books/<id>/summary: get a summary and aggregate rating for book
+-GET /recommendations: get a book reccomandation based on user prefernce
+- POST / generate-summary: generate a summary for a given book content 
+
+please write code for fast api with controller - service-repository structure
+
+Also there some specific requirments :-
+Implement asynchronous operations for databse interaction and AI model predictions using sqlalchemy[asyncio] and asyncpg.
+
+Authentication and Security :-
+Implement basic authentication for the api. Ensure communcation with the database and API endpoints
