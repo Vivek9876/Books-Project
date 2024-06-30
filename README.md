@@ -17,12 +17,8 @@ Execute following commands to clear dependencies
 pip uninstall -y -r requirements.txt
 ```
 
-## Setup
- 
-Add following env variable
-
 ## Start server
  
 ```shell
-python -m uvicorn main:app
+python uvicorn app.main:app --reload 
 ```
