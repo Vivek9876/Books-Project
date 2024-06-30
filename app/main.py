@@ -13,7 +13,7 @@ from .api.router import api_router
 
 @app.get("/health")
 def read_root():
-    return {"message": "Healthy"}
+    return {"message": "Healthy Repo"}
 
 app.include_router(api_router)
 
