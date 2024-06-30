@@ -20,4 +20,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t books-project-app .
     - name: Push to Dockerhub
-      run: docker push viveksantoki008/books-project-app:latest
+      run: docker push viveksantoki008/***books-project-app:latest
