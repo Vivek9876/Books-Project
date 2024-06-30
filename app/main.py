@@ -10,9 +10,12 @@ app = FastAPI(title="My Awesome API",
 # Include the API router with all sub-routers
 from .api.router import api_router
 
+@app.get("/")
+def read_root():
+    return {"message": "There you go"}
 
 @app.get("/health")
-def read_root():
+def read_health():
     return {"message": "Healthy Repo Happy Repo..."}
 
 app.include_router(api_router)
