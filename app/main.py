@@ -12,7 +12,7 @@ from .api.router import api_router
 
 @app.get("/")
 def read_root():
-    return {"message": "There you go"}
+    return {"message": "There you go all"}
 
 @app.get("/health")
 def read_health():
