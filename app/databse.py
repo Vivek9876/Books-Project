@@ -2,8 +2,8 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import sessionmaker
 from .model.base import Base  # Ensure all models are imported here
 
-DATABASE_URL = "postgresql+asyncpg://postgres:password@localhost/booksdb"
-
+DATABASE_URL = "postgresql+asyncpg://postgres:vivek1#family@postgres-books.cdmqgy8mo8ev.ap-south-1.rds.amazonaws.com:5432/booksDB"
+# "postgresql+asyncpg://postgres:password@localhost/booksdb"
 engine = create_async_engine(DATABASE_URL, echo=True)
 SessionLocal = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False, autoflush=False)
 
